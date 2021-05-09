@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karayadar.app.activities.WelcomScreen">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:padding="@dimen/_15sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:id="@+id/welcome"
+            android:textSize="@dimen/_35sdp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="please login or sign up to continue using our app
+"
+            android:id="@+id/loginstatment"
+            android:padding="@dimen/_3sdp"
+            android:layout_below="@+id/welcome"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#817777"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/header2"
+            android:id="@+id/header"
+            android:layout_below="@+id/loginstatment"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter via social media"
+            android:padding="@dimen/_3sdp"
+            android:id="@+id/loginstatmentww"
+            android:layout_below="@+id/header"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#817777"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_below="@+id/loginstatmentww"
+            android:weightSum="2"
+            android:id="@+id/linearLayout"
+            android:padding="@dimen/_12sdp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/facebook_ll"
+                android:onClick="facebook"
+                android:foreground="@drawable/layout_selector"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/button_drawble">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/facebook"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/google_ll"
+                android:onClick="google"
+                android:foreground="@drawable/layout_selector"
+
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/button_drawble">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/googleplus"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or login with email"
+            android:padding="@dimen/_3sdp"
+            android:id="@+id/xsss"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#817777"/>
+
+
+
+        <Button
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/xsss"
+            android:background="@drawable/button_drawble_again"
+            android:textColor="#ffffff"
+            android:id="@+id/signup"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/laststatemtn"
+            android:layout_below="@+id/signup"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account ? "
+                android:id="@+id/ss"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#817777"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/login"
+                android:onClick="Login"
+                android:layout_gravity="center"
+                android:textColor="#2A9CE8"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>
+
+
+    </RelativeLayout>

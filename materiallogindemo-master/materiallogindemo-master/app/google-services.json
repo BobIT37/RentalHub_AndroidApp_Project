@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "614263319799",
+    "firebase_url": "https://karayadar-ad957.firebaseio.com",
+    "project_id": "karayadar-ad957",
+    "storage_bucket": "karayadar-ad957.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614263319799:android:ec330cea802c55a58df7f2",
+        "android_client_info": {
+          "package_name": "com.karayadar.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614263319799-ibf49onfa0pdf4cleqhk3p0vfgf6bb59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.karayadar.app",
+            "certificate_hash": "c155f4ee6d7a57d40235f2abd59a1065355ad86c"
+          }
+        },
+        {
+          "client_id": "614263319799-pkhb7v6bdsid256siqda17dso35gauf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO_qKQ1sqWdweX2Ahl7SFZen9FuF6AkyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614263319799-pkhb7v6bdsid256siqda17dso35gauf3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

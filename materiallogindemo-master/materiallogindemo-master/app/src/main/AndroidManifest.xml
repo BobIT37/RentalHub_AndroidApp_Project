@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.karayadar.app">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".activities.GoogleMapShow"/>
+        <activity android:name=".activities.MyCarActivity" />
+        <activity android:name=".activities.MyHouseActivity" />
+        <activity android:name=".activities.MyShopsActivity" />
+        <activity android:name=".activities.MyApartmentsActivity" />
+        <activity android:name=".HouseItemDisplayActivity" />
+        <activity android:name=".ShopItemActivity" />
+        <activity android:name=".ApartmentItemActivity" />
+        <activity android:name=".ItemDisplayActivity" />
+        <activity android:name=".activities.HouseActivity" />
+        <activity android:name=".Authentication.VerifyPhoneActivity" />
+        <activity android:name=".Authentication.StartActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Mainscreen" />
+        <activity
+            android:name=".activities.WelcomScreen"
+            android:theme="@style/AppTheme" />
+        <!--
+<activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.Dark" />
+        -->
+        <activity android:name=".activities.Apartment" />
+        <activity android:name=".activities.Shop" />
+        <activity android:name=".activities.CarActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_main_menu" />
+        <activity android:name=".activities.CatagoryForm" />
+        <activity android:name=".Home" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activities.MainMenu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SignupActivity" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_api_key" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

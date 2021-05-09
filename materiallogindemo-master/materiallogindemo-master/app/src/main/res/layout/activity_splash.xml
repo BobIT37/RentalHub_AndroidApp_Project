@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header2"
+        android:id="@+id/ssimageView"/>
+
+
+    <TextView
+        android:id="@+id/slogan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ssimageView"
+        android:layout_centerHorizontal="true"
+
+        android:fontFamily="@font/alex_brush"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="@dimen/_35sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_text"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/antic"
+        android:text="Get the thing you want"
+        android:textColor="#03A9F4"
+        android:textSize="@dimen/_12sdp" />
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark">
+
+    <ImageView
+        android:id="@+id/headerimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/primary"
+        android:background="@drawable/logo"
+        android:visibility="gone"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/headerimg"
+        android:text="My Ads"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="@dimen/_40sdp"/>
+<LinearLayout
+    android:layout_width="@dimen/_60sdp"
+    android:layout_height="@dimen/_80sdp"
+    android:layout_marginTop="@dimen/_180sdp"
+    android:layout_marginLeft="@dimen/_40sdp"
+    android:layout_alignParentStart="true"
+    android:orientation="vertical"
+    android:id="@+id/carlin">
+
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:padding="@dimen/_3sdp"
+        android:src="@drawable/ic_car" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car"
+        android:textAlignment="center"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_180sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:id="@+id/Apartmentlin">
+
+    <ImageView
+        android:id="@+id/apartment"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/ic_construction"
+        android:padding="@dimen/_3sdp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apartment"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/carlin"
+        android:orientation="vertical"
+        android:id="@+id/houselin">
+    <ImageView
+        android:id="@+id/Housebtn"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/ic_laptop"
+        android:padding="@dimen/_3sdp"
+
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="House"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Apartmentlin"
+        android:orientation="vertical"
+        android:id="@+id/Shoplin">
+
+    <ImageView
+        android:id="@+id/shop"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:src="@drawable/ic_shopping"
+        android:padding="@dimen/_3sdp"
+
+         />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</RelativeLayout>
